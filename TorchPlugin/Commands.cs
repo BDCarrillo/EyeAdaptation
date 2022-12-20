@@ -18,7 +18,7 @@ namespace TorchPlugin
         private void RespondWithInfo()
         {
             var config = Plugin.Instance.Config;
-            Respond("PluginTemplate plugin is enabled: {Format(config.Enabled)}");
+            Respond("FixedEyeAdaptation plugin is enabled: {Format(config.Enabled)}");
             // TODO: Respond with your current configuration values
         }
 
@@ -26,7 +26,7 @@ namespace TorchPlugin
         private static string Format(bool value) => value ? "Yes" : "No";
 
         // ReSharper disable once UnusedMember.Global
-        [Command("PluginTemplate info", "PluginTemplate: Prints the current settings")]
+        [Command("FixedEyeAdaptation info", "FixedEyeAdaptation: Prints the current settings")]
         [Permission(MyPromoteLevel.None)]
         public void Info()
         {
@@ -34,7 +34,7 @@ namespace TorchPlugin
         }
 
         // ReSharper disable once UnusedMember.Global
-        [Command("PluginTemplate enable", "PluginTemplate: Enables the plugin")]
+        [Command("FixedEyeAdaptation enable", "FixedEyeAdaptation: Enables the plugin")]
         [Permission(MyPromoteLevel.Admin)]
         public void Enable()
         {
@@ -43,7 +43,7 @@ namespace TorchPlugin
         }
 
         // ReSharper disable once UnusedMember.Global
-        [Command("PluginTemplate disable", "PluginTemplate: Disables the plugin")]
+        [Command("FixedEyeAdaptation disable", "FixedEyeAdaptation: Disables the plugin")]
         [Permission(MyPromoteLevel.Admin)]
         public void Disable()
         {
